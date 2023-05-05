@@ -1,0 +1,112 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IMGUI_FONT              RCDATA                  "Ruda-Bold.ttf"
+
+R_LANGUAGES             RCDATA                  "languages.json"
+
+IMGUI_FONT_BOLD         RCDATA                  "Ruda-ExtraBold.ttf"
+
+SIGNATURES              RCDATA                  "signatures.json"
+
+MAPENKANOMIYADATA       RCDATA                  "map_enkanomiya.json"
+
+MAPTEYVATDATA           RCDATA                  "map_teyvat.json"
+
+MAPUNDEGROUNDMINESDATA  RCDATA                  "map_undeground_mines.json"
+
+MAPGOLDENAPPLEARCHIPELAGODATA RCDATA                  "map_golden_apple_archipelago.json"
+
+ASSEMBLYCHECKSUMS       RCDATA                  "assembly_checksum.json"
+
+ASCENSIONMATERIALSDATA  RCDATA                  "ascension_materials.json"
+
+IMGUI_FONT_CHINESE      RCDATA                  "MiSans-Regular.ttf"
+
+IMGUI_FONT_CYRILLIC     RCDATA                  "ubuntu_bold.ttf"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// GIF
+//
+
+ANIM_AKEBIBOUNCE        GIF                     "anim\\akebi_bounce.gif"
+
+#pragma region "Warning"
+ArabicW                 PNG                     "warnings\\AR.png"
+ZHCN                    PNG                     "warnings\\ZHCN.png"
+ZHTW                    PNG                     "warnings\\ZHTW.png"
+FilipinoW               PNG                     "warnings\\PH.png"
+JapaneseW               PNG                     "warnings\\JA.png"
+MalayW                  PNG                     "warnings\\MY.png"
+PortugueseW             PNG                     "warnings\\PT.png"
+RussianW                PNG                     "warnings\\RU.png"
+VietnameseW             PNG                     "warnings\\VN.png"
+EnglishW                PNG                     "warnings\\EN.png"
+#pragma endregion
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

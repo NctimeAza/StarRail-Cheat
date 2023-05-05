@@ -1,0 +1,30 @@
+{
+  "china": {
+    "game_version": "CNRELWin1.0.5",
+    "modules": {
+      "UnityPlayer.dll": {
+        "checksum": 7660094679754433412,
+        "timestamp": 0
+      },
+      "GameAssembly.dll": {
+        "checksum": 9848421818992720704,
+        "timestamp": 0
+      }
+    },
+    "checksum": "114514"
+  },
+  "global": {
+    "game_version": "OSRELWin1.0.5",
+    "modules": {
+      "UnityPlayer.dll": {
+        "checksum": 7660094679754433412,
+        "timestamp": 0
+      },
+      "GameAssembly.dll": {
+        "checksum": 9848421818992720704,
+        "timestamp": 0
+      }
+    },
+    "checksum": "114514"
+  }
+}
