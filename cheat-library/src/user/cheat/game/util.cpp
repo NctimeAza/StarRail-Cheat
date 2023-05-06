@@ -2,7 +2,6 @@
 #include "util.h"
 
 #include <helpers.h>
-#include "EntityManager.h"
 
 namespace cheat::game
 {
@@ -50,49 +49,6 @@ namespace cheat::game
 	uint32_t GetCurrentMapSceneID()
 	{
 		return 0;
-	}
-
-	app::GadgetEntity* GetGadget(uint32_t runtimeID)
-	{
-		auto& manager = EntityManager::instance();
-		return GetGadget(manager.entity(runtimeID));
-	}
-
-	app::GadgetEntity* GetGadget(app::BaseEntity* entity)
-	{
-		if (entity == nullptr)
-			return nullptr;
-
-		auto ent = Entity(entity);
-		if (!ent.isGadget())
-			return nullptr;
-
-		return reinterpret_cast<app::GadgetEntity*>(entity);
-	}
-
-	app::GadgetEntity* GetGadget(Entity* entity)
-	{
-		if (entity == nullptr || !entity->isGadget())
-			return nullptr;
-		
-		return reinterpret_cast<app::GadgetEntity*>(entity);
-	}
-
-	game::Entity* FindNearestEntity(const IEntityFilter& filter)
-	{
-		auto& manager = game::EntityManager::instance();
-		auto entities = manager.entities(filter);
-		return FindNearestEntity(entities);
-	}
-
-	game::Entity* FindNearestEntity(std::vector<game::Entity*>& entities)
-	{
-		if (entities.size() == 0)
-			return nullptr;
-
-		auto avatar = game::EntityManager::instance().avatar();
-		return *std::min_element(entities.begin(), entities.end(),
-			[avatar](game::Entity* a, game::Entity* b) { return avatar->distance(a) < avatar->distance(b); });
 	}
 
 	app::AccountDataItem* GetAccountData()

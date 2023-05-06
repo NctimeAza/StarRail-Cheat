@@ -58,14 +58,6 @@ IMGUI_FONT_BOLD         RCDATA                  "Ruda-ExtraBold.ttf"
 
 SIGNATURES              RCDATA                  "signatures.json"
 
-MAPENKANOMIYADATA       RCDATA                  "map_enkanomiya.json"
-
-MAPTEYVATDATA           RCDATA                  "map_teyvat.json"
-
-MAPUNDEGROUNDMINESDATA  RCDATA                  "map_undeground_mines.json"
-
-MAPGOLDENAPPLEARCHIPELAGODATA RCDATA                  "map_golden_apple_archipelago.json"
-
 ASSEMBLYCHECKSUMS       RCDATA                  "assembly_checksum.json"
 
 ASCENSIONMATERIALSDATA  RCDATA                  "ascension_materials.json"

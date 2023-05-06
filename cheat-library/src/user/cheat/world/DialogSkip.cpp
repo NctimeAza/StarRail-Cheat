@@ -2,7 +2,6 @@
 #include "DialogSkip.h"
 
 #include <helpers.h>
-#include <cheat/game/EntityManager.h>
 
 namespace cheat::feature
 {
@@ -107,32 +106,32 @@ namespace cheat::feature
             app::Time_set_timeScale(1.0f, nullptr);
 
         bool isImportant = false;
-        if (f_ExcludeImportant->enabled())
-        {
-            // TODO: Add a custom filter in the future where users can
-            // add their own name substrings of entities to avoid
-            // speeding up dialog on.
-            std::vector<std::string> impEntitiesNames = {
-                "Djinn",
-                "Katheryne",
-                "Wagner",
-                "Ahangar",
-                "MasterZhang",
-                "Cat_Prince"
-            };
-            auto dialogPartnerID = context->fields._inteeID;
-            auto& manager = game::EntityManager::instance();
-            auto dialogPartner = manager.entity(dialogPartnerID);
-            auto dialogPartnerName = dialogPartner->name();
-            for (auto impEntityName : impEntitiesNames)
-            {
-                if (dialogPartnerName.find(impEntityName) != -1) {
-                    //LOG_DEBUG("%s %s %d", dialogPartnerName.c_str(), impEntityName, dialogPartnerName.find(impEntityName));
-                    isImportant = true;
-                    break;
-                }
-            }
-        }
+        //if (f_ExcludeImportant->enabled())
+        //{
+        //    // TODO: Add a custom filter in the future where users can
+        //    // add their own name substrings of entities to avoid
+        //    // speeding up dialog on.
+        //    std::vector<std::string> impEntitiesNames = {
+        //        "Djinn",
+        //        "Katheryne",
+        //        "Wagner",
+        //        "Ahangar",
+        //        "MasterZhang",
+        //        "Cat_Prince"
+        //    };
+        //    auto dialogPartnerID = context->fields._inteeID;
+        //    auto& manager = game::EntityManager::instance();
+        //    auto dialogPartner = manager.entity(dialogPartnerID);
+        //    auto dialogPartnerName = dialogPartner->name();
+        //    for (auto impEntityName : impEntitiesNames)
+        //    {
+        //        if (dialogPartnerName.find(impEntityName) != -1) {
+        //            //LOG_DEBUG("%s %s %d", dialogPartnerName.c_str(), impEntityName, dialogPartnerName.find(impEntityName));
+        //            isImportant = true;
+        //            break;
+        //        }
+        //    }
+        //}
 
         if (talkDialog->fields._inSelect && f_AutoSelectDialog->enabled() && !isImportant)
         {

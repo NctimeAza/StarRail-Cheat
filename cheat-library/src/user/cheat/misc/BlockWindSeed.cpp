@@ -12,8 +12,8 @@ namespace cheat::feature
 	BlockWindSeed::BlockWindSeed() : Feature(),
 		NF(f_Enabled, "General::BlockWindSeed", false)
 	{
-		HookManager::install(app::MoleMole_PlayerModule_OnWindSeedClientNotify, PlayerModule_OnWindSeedClientNotify_Hook);
-		HookManager::install(app::MoleMole_PlayerModule_OnReciveLuaShell, PlayerModule_OnReciveLuaShell_Hook);
+		//HookManager::install(app::MoleMole_PlayerModule_OnWindSeedClientNotify, PlayerModule_OnWindSeedClientNotify_Hook);
+		//HookManager::install(app::MoleMole_PlayerModule_OnReciveLuaShell, PlayerModule_OnReciveLuaShell_Hook);
 	}
 
 	const FeatureGUIInfo& BlockWindSeed::GetGUIInfo() const

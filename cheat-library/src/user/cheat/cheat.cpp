@@ -6,7 +6,6 @@
 #include <cheat/events.h>
 
 #include <cheat-base/cheat/misc/Settings.h>
-#include <cheat/game/EntityAppearManager.h>
 
 #include <cheat/misc/ProtectionBypass.h>
 #include <cheat/misc/Hotkeys.h>
@@ -16,35 +15,14 @@
 #include <cheat/misc/BlockWindSeed.h>
 #include <cheat/misc/RSAPatch.h>
 
-#include <cheat/player/GodMode.h>
-#include <cheat/player/InfiniteStamina.h>
 #include <cheat/player/NoCD.h>
-#include <cheat/player/NoClip.h>
-#include <cheat/player/AutoRun.h>
-#include <cheat/player/FallControl.h>
 
 
 #include <cheat/world/DialogSkip.h>
 #include <cheat/world/DumbEnemies.h>
-#include <cheat/world/FreezeEnemies.h>
 #include <cheat/world/ElementalSight.h>
-#include <cheat/world/MobVacuum.h>
-#include <cheat/world/AutoDestroy.h>
-#include <cheat/world/AutoSeelie.h>
-#include <cheat/world/VacuumLoot.h>
 #include <cheat/world/GameSpeed.h>
 
-#include <cheat/teleport/ChestTeleport.h>
-#include <cheat/teleport/MapTeleport.h>
-#include <cheat/teleport/OculiTeleport.h>
-#include <cheat/teleport/CustomTeleports.h>
-#include <cheat/teleport/QuestTeleport.h>
-
-#include <cheat/esp/ESP.h>
-#include <cheat/imap/InteractiveMap.h>
-
-#include <cheat/world/AutoChallenge.h>
-#include <cheat/world/CustomWeather.h>
 #include <cheat/world/OpenTeamImmediately.h>
 #include <cheat/world/SkipEnhanceAnimation.h>
 
@@ -59,8 +37,6 @@
 #include <cheat/visuals/EnablePeeking.h>
 #include <cheat/visuals/TextureChanger.h>
 #include <cheat/visuals/FreeCamera.h>
-#include <cheat/visuals/AnimationChanger.h>
-#include <cheat/visuals/ShowSkillCD.h>
 
 #include <resource.h>
 
@@ -131,7 +107,7 @@ namespace cheat
 			//FEAT_INST(Browser),
 			FEAT_INST(CameraZoom),
 			//FEAT_INST(TextureChanger),
-			//FEAT_INST(FreeCamera),
+			FEAT_INST(FreeCamera),
 			//FEAT_INST(AnimationChanger)	
 			});
 #undef FEAT_INST

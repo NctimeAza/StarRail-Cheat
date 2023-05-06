@@ -3,7 +3,6 @@
 
 #include <helpers.h>
 #include <cheat/events.h>
-#include <cheat/game/EntityManager.h>
 
 namespace cheat::feature
 {

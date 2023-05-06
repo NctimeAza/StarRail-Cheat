@@ -13,6 +13,24 @@
 
 隐藏界面
 
+自由视角
+
+Shit cheat based on akebi3.3 src
+
+features:
+
+GameSpeed
+
+peeking
+
+fps unlock
+
+fov changer
+
+hide ui
+
+free camera
+
 
 # 如何使用？
 
@@ -21,4 +39,6 @@
 从 https://github.com/Z4ee/StarRail-ACE-B 克隆并编译，将得到的star_rail.dll与此项目编译得到的CLibrary.dll以及injector.exe放在同一目录
 
 启动
+
+**编译不了是你的问题**
 

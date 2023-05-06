@@ -26,7 +26,6 @@ namespace cheat::feature
 		virtual bool NeedInfoDraw() const override;
 		void DrawInfo() override;
 	
-		void DrawExternal() override;
 	private:
 		Debug();
 	};

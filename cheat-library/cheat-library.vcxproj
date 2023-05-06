@@ -15,8 +15,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\user\cheat\esp\ESPCustomFilter.h" />
-    <ClInclude Include="src\user\cheat\game\EntityAppearManager.h" />
     <ClInclude Include="src\user\cheat\game\xxHash.hpp" />
     <ClInclude Include="src\user\cheat\misc\About.h" />
     <ClInclude Include="src\user\cheat\misc\BlockWindSeed.h" />
@@ -26,23 +24,14 @@
     <ClInclude Include="src\user\cheat\misc\sniffer\pipe\messages\PipePacketData.h" />
     <ClInclude Include="src\user\cheat\misc\sniffer\pipe\PipeClient.h" />
     <ClInclude Include="src\user\cheat\misc\sniffer\pipe\PipeIO.h" />
-    <ClInclude Include="src\user\cheat\player\AutoRun.h" />
-    <ClInclude Include="src\user\cheat\teleport\QuestTeleport.h" />
-    <ClInclude Include="src\user\cheat\visuals\AnimationChanger.h" />
-    <ClInclude Include="src\user\cheat\player\FallControl.h" />
-    <ClInclude Include="src\user\cheat\visuals\ShowSkillCD.h" />
     <ClInclude Include="src\user\cheat\visuals\TextureChanger.h" />
     <ClInclude Include="src\user\cheat\visuals\FreeCamera.h" />
-    <ClInclude Include="src\user\cheat\world\AutoChallenge.h" />
-    <ClInclude Include="src\user\cheat\world\AutoSeelie.h" />
-    <ClInclude Include="src\user\cheat\world\CustomWeather.h" />
     <ClInclude Include="src\user\cheat\debugger.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="src\user\cheat\GenshinCM.h" />
-    <ClInclude Include="src\user\cheat\teleport\CustomTeleports.h" />
     <ClInclude Include="src\user\cheat\visuals\Browser.h" />
     <ClInclude Include="src\user\cheat\visuals\CameraZoom.h" />
     <ClInclude Include="src\user\cheat\visuals\EnablePeeking.h" />
@@ -54,13 +43,6 @@
     <ClInclude Include="src\user\cheat\visuals\ShowChestIndicator.h" />
     <ClInclude Include="src\user\cheat\world\ElementalSight.h" />
     <ClInclude Include="src\user\cheat\game\AdvancedFilter.h" />
-    <ClInclude Include="src\user\cheat\game\Chest.h" />
-    <ClInclude Include="src\user\cheat\game\ChestFilter.h" />
-    <ClInclude Include="src\user\cheat\game\Entity.h" />
-    <ClInclude Include="src\user\cheat\game\CacheFilterExecutor.h" />
-    <ClInclude Include="src\user\cheat\game\EntityManager.h" />
-    <ClInclude Include="src\user\cheat\esp\ESPRender.h" />
-    <ClInclude Include="src\user\cheat\esp\ESPItem.h" />
     <ClInclude Include="res\resource.h" />
     <ClInclude Include="src\appdata\il2cpp-api-functions.h" />
     <ClInclude Include="src\appdata\il2cpp-functions.h" />
@@ -73,14 +55,9 @@
     <ClInclude Include="src\framework\il2cpp-init.h" />
     <ClInclude Include="src\framework\pch-il2cpp.h" />
     <ClInclude Include="src\user\cheat\cheat.h" />
-    <ClInclude Include="src\user\cheat\esp\ESP.h" />
     <ClInclude Include="src\user\cheat\events.h" />
-    <ClInclude Include="src\user\cheat\game\filters.h" />
-    <ClInclude Include="src\user\cheat\game\IEntityFilter.h" />
-    <ClInclude Include="src\user\cheat\game\SimpleFilter.h" />
     <ClInclude Include="src\user\cheat\game\util.h" />
     <ClInclude Include="src\user\cheat\ILPatternScanner.h" />
-    <ClInclude Include="src\user\cheat\imap\InteractiveMap.h" />
     <ClInclude Include="src\user\cheat\misc\Debug.h" />
     <ClInclude Include="src\user\cheat\misc\Hotkeys.h" />
     <ClInclude Include="src\user\cheat\misc\ProtectionBypass.h" />
@@ -89,23 +66,12 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="src\user\cheat\native.h" />
-    <ClInclude Include="src\user\cheat\player\GodMode.h" />
-    <ClInclude Include="src\user\cheat\player\InfiniteStamina.h" />
     <ClInclude Include="src\user\cheat\player\NoCD.h" />
-    <ClInclude Include="src\user\cheat\player\NoClip.h" />
-    <ClInclude Include="src\user\cheat\teleport\ChestTeleport.h" />
-    <ClInclude Include="src\user\cheat\teleport\ItemTeleportBase.h" />
-    <ClInclude Include="src\user\cheat\teleport\MapTeleport.h" />
-    <ClInclude Include="src\user\cheat\teleport\OculiTeleport.h" />
-    <ClInclude Include="src\user\cheat\world\AutoDestroy.h" />
     <ClInclude Include="src\user\cheat\world\DialogSkip.h" />
     <ClInclude Include="src\user\cheat\world\DumbEnemies.h" />
-    <ClInclude Include="src\user\cheat\world\FreezeEnemies.h" />
     <ClInclude Include="src\user\cheat\world\GameSpeed.h" />
-    <ClInclude Include="src\user\cheat\world\MobVacuum.h" />
     <ClInclude Include="src\user\cheat\world\OpenTeamImmediately.h" />
     <ClInclude Include="src\user\cheat\world\SkipEnhanceAnimation.h" />
-    <ClInclude Include="src\user\cheat\world\VacuumLoot.h" />
     <ClInclude Include="src\user\main.h" />
   </ItemGroup>
   <ItemGroup>
@@ -114,8 +80,6 @@
     <Font Include="res\Ruda-ExtraBold.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\user\cheat\esp\ESPCustomFilter.cpp" />
-    <ClCompile Include="src\user\cheat\game\EntityAppearManager.cpp" />
     <ClCompile Include="src\user\cheat\misc\About.cpp" />
     <ClCompile Include="src\user\cheat\misc\BlockWindSeed.cpp" />
     <ClCompile Include="src\user\cheat\misc\RSAPatch.cpp" />
@@ -124,22 +88,13 @@
     <ClCompile Include="src\user\cheat\misc\sniffer\pipe\messages\PipePacketData.cpp" />
     <ClCompile Include="src\user\cheat\misc\sniffer\pipe\PipeClient.cpp" />
     <ClCompile Include="src\user\cheat\misc\sniffer\pipe\PipeIO.cpp" />
-    <ClCompile Include="src\user\cheat\player\AutoRun.cpp" />
-    <ClCompile Include="src\user\cheat\teleport\QuestTeleport.cpp" />
-    <ClCompile Include="src\user\cheat\visuals\AnimationChanger.cpp" />
-    <ClCompile Include="src\user\cheat\player\FallControl.cpp" />
-    <ClCompile Include="src\user\cheat\visuals\ShowSkillCD.cpp" />
     <ClCompile Include="src\user\cheat\visuals\TextureChanger.cpp" />
     <ClCompile Include="src\user\cheat\visuals\FreeCamera.cpp" />
-    <ClCompile Include="src\user\cheat\world\AutoChallenge.cpp" />
-    <ClCompile Include="src\user\cheat\world\AutoSeelie.cpp" />
-    <ClCompile Include="src\user\cheat\world\CustomWeather.cpp" />
     <ClCompile Include="src\user\cheat\debugger.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\CustomTeleports.cpp" />
     <ClCompile Include="src\user\cheat\GenshinCM.cpp" />
     <ClCompile Include="src\user\cheat\visuals\Browser.cpp" />
     <ClCompile Include="src\user\cheat\visuals\CameraZoom.cpp" />
@@ -151,12 +106,6 @@
     <ClCompile Include="src\user\cheat\visuals\ProfileChanger.cpp" />
     <ClCompile Include="src\user\cheat\visuals\ShowChestIndicator.cpp" />
     <ClCompile Include="src\user\cheat\world\ElementalSight.cpp" />
-    <ClCompile Include="src\user\cheat\game\Chest.cpp" />
-    <ClCompile Include="src\user\cheat\game\ChestFilter.cpp" />
-    <ClCompile Include="src\user\cheat\game\Entity.cpp" />
-    <ClCompile Include="src\user\cheat\game\CacheFilterExecutor.cpp" />
-    <ClCompile Include="src\user\cheat\game\EntityManager.cpp" />
-    <ClCompile Include="src\user\cheat\esp\ESPRender.cpp" />
     <ClCompile Include="src\framework\dllmain.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
@@ -170,13 +119,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\user\cheat\cheat.cpp" />
-    <ClCompile Include="src\user\cheat\esp\ESP.cpp" />
     <ClCompile Include="src\user\cheat\events.cpp" />
-    <ClCompile Include="src\user\cheat\game\filters.cpp" />
-    <ClCompile Include="src\user\cheat\game\SimpleFilter.cpp" />
     <ClCompile Include="src\user\cheat\game\util.cpp" />
     <ClCompile Include="src\user\cheat\ILPatternScanner.cpp" />
-    <ClCompile Include="src\user\cheat\imap\InteractiveMap.cpp" />
     <ClCompile Include="src\user\cheat\misc\Debug.cpp" />
     <ClCompile Include="src\user\cheat\misc\Hotkeys.cpp" />
     <ClCompile Include="src\user\cheat\misc\ProtectionBypass.cpp" />
@@ -185,23 +130,12 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_WS|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="src\user\cheat\native.cpp" />
-    <ClCompile Include="src\user\cheat\player\GodMode.cpp" />
-    <ClCompile Include="src\user\cheat\player\InfiniteStamina.cpp" />
     <ClCompile Include="src\user\cheat\player\NoCD.cpp" />
-    <ClCompile Include="src\user\cheat\player\NoClip.cpp" />
-    <ClCompile Include="src\user\cheat\teleport\ChestTeleport.cpp" />
-    <ClCompile Include="src\user\cheat\teleport\ItemTeleportBase.cpp" />
-    <ClCompile Include="src\user\cheat\teleport\MapTeleport.cpp" />
-    <ClCompile Include="src\user\cheat\teleport\OculiTeleport.cpp" />
-    <ClCompile Include="src\user\cheat\world\AutoDestroy.cpp" />
     <ClCompile Include="src\user\cheat\world\DialogSkip.cpp" />
     <ClCompile Include="src\user\cheat\world\DumbEnemies.cpp" />
-    <ClCompile Include="src\user\cheat\world\FreezeEnemies.cpp" />
     <ClCompile Include="src\user\cheat\world\GameSpeed.cpp" />
-    <ClCompile Include="src\user\cheat\world\MobVacuum.cpp" />
     <ClCompile Include="src\user\cheat\world\OpenTeamImmediately.cpp" />
     <ClCompile Include="src\user\cheat\world\SkipEnhanceAnimation.cpp" />
-    <ClCompile Include="src\user\cheat\world\VacuumLoot.cpp" />
     <ClCompile Include="src\user\main.cpp" />
   </ItemGroup>
   <PropertyGroup>
@@ -219,10 +153,6 @@
     <None Include="res\ascension_materials.json" />
     <None Include="res\assembly_checksum.json" />
     <None Include="res\languages.json" />
-    <None Include="res\map_enkanomiya.json" />
-    <None Include="res\map_teyvat.json" />
-    <None Include="res\map_undeground_mines.json" />
-    <None Include="res\map_golden_apple_archipelago.json" />
     <None Include="res\signatures.json" />
   </ItemGroup>
   <ItemGroup>

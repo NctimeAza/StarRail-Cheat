@@ -57,37 +57,13 @@
     <ClInclude Include="src\user\cheat\misc\ProtectionBypass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\player\GodMode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\player\InfiniteStamina.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\player\NoCD.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\player\NoClip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\ChestTeleport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\ItemTeleportBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\MapTeleport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\OculiTeleport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\world\DialogSkip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\world\DumbEnemies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\world\MobVacuum.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\cheat.h">
@@ -108,43 +84,7 @@
     <ClInclude Include="res\resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\world\AutoDestroy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\esp\ESP.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\esp\ESPItem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\esp\ESPRender.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\Entity.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\Chest.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\EntityManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\CacheFilterExecutor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\IEntityFilter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\SimpleFilter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\game\util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\filters.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\ChestFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\game\AdvancedFilter.h">
@@ -153,13 +93,7 @@
     <ClInclude Include="src\user\cheat\world\ElementalSight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\imap\InteractiveMap.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\GenshinCM.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\CustomTeleports.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\visuals\FPSUnlock.h">
@@ -210,31 +144,7 @@
     <ClInclude Include="src\user\cheat\misc\sniffer\pipe\PipeIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\world\AutoSeelie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\world\VacuumLoot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\visuals\FreeCamera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\player\AutoRun.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\world\FreezeEnemies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\world\CustomWeather.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\visuals\AnimationChanger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\player\FallControl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\world\AutoChallenge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\user\cheat\world\OpenTeamImmediately.h">
@@ -252,22 +162,10 @@
     <ClInclude Include="src\user\cheat\world\SkipEnhanceAnimation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\visuals\ShowSkillCD.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\game\xxHash.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\user\cheat\esp\ESPCustomFilter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\teleport\QuestTeleport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\user\cheat\misc\RSAPatch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\user\cheat\game\EntityAppearManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -301,37 +199,13 @@
     <ClCompile Include="src\user\cheat\misc\ProtectionBypass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\player\GodMode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\player\InfiniteStamina.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\user\cheat\player\NoCD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\player\NoClip.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\ChestTeleport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\ItemTeleportBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\MapTeleport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\OculiTeleport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\world\DialogSkip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\world\DumbEnemies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\world\MobVacuum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\cheat.cpp">
@@ -349,49 +223,13 @@
     <ClCompile Include="src\user\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\world\AutoDestroy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\esp\ESP.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\esp\ESPRender.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\Entity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\Chest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\EntityManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\CacheFilterExecutor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\SimpleFilter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\user\cheat\game\util.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\filters.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\ChestFilter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\imap\InteractiveMap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\world\ElementalSight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\GenshinCM.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\CustomTeleports.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\user\cheat\visuals\FPSUnlock.cpp">
@@ -427,12 +265,6 @@
     <ClCompile Include="src\user\cheat\visuals\TextureChanger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\world\AutoSeelie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\world\VacuumLoot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\user\cheat\misc\sniffer\pipe\messages\PipeMessage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -451,24 +283,6 @@
     <ClCompile Include="src\user\cheat\visuals\FreeCamera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\player\AutoRun.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\world\FreezeEnemies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\world\CustomWeather.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\visuals\AnimationChanger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\player\FallControl.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\world\AutoChallenge.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\user\cheat\world\OpenTeamImmediately.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -484,29 +298,13 @@
     <ClCompile Include="src\user\cheat\world\SkipEnhanceAnimation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\user\cheat\visuals\ShowSkillCD.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\esp\ESPCustomFilter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\teleport\QuestTeleport.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\user\cheat\misc\RSAPatch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\user\cheat\game\EntityAppearManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\signatures.json" />
-    <None Include="res\map_enkanomiya.json" />
-    <None Include="res\map_teyvat.json" />
-    <None Include="res\map_undeground_mines.json" />
     <None Include="res\assembly_checksum.json" />
-    <None Include="res\map_golden_apple_archipelago.json" />
     <None Include="res\ascension_materials.json" />
     <None Include="res\languages.json" />
   </ItemGroup>

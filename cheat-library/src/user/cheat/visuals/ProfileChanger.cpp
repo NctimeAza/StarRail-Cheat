@@ -50,8 +50,8 @@ namespace cheat::feature
         NF(f_Card, "Visuals::ProfileChanger", false),
         toBeUpdate(), nextUpdate(0)
     {
-        HookManager::install(app::ProfilePage, ProfilePage);
-        HookManager::install(app::ProfileEditPage, ProfileEditPage);
+        //HookManager::install(app::ProfilePage, ProfilePage);
+        //HookManager::install(app::ProfileEditPage, ProfileEditPage);
         events::GameUpdateEvent += MY_METHOD_HANDLER(ProfileChanger::OnGameUpdate);
     }
 

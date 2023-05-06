@@ -7,6 +7,8 @@
 // ******************************************************************************
 using namespace app;
 
+// GameUpdateEvent
+DO_APP_FUNC(0x05324d70, 0x05324d70, void, Main_Update, (void *__this, MethodInfo *method));
 
 // Networking
 DO_APP_FUNC(0x0, 0x0, void, Kcp_KcpNative_kcp_packet_destroy, (KcpPacket_1 *packet, MethodInfo *method));
@@ -24,16 +26,6 @@ DO_APP_FUNC(0x0306C5A0, 0x02FFF6A0, SimpleSafeUInt32, MoleMole_SimpleSafeUInt32_
 DO_APP_FUNC(0x02ef4b10, 0x02ef4b10, String *, Marshal_PtrToStringAnsi, (void *ptr, MethodInfo *method));
 DO_APP_FUNC(0x02ef4b20, 0x02ef4b20, String *, Marshal_PtrToStringUni, (void *ptr, MethodInfo *method));
 
-// Map utility
-DO_APP_FUNC(0x010F71E0, 0x010E9A60, Rect, MonoInLevelMapPage_get_mapRect, (MonoInLevelMapPage *__this, MethodInfo *method));
-DO_APP_FUNC(0x010F71C0, 0x010E9A40, Transform *, MonoInLevelMapPage_get_mapBackground, (MonoInLevelMapPage *__this, MethodInfo *method));
-
-// Teleport hooks
-DO_APP_FUNC(0x05324d70, 0x05324d70, void, Main_Update, (void *__this, MethodInfo *method));
-
-DO_APP_FUNC(0x0, 0x0, bool, Miscs_CheckTargetAttackable, (BaseEntity *attackerEntity, BaseEntity *targetEntity, MethodInfo *method));
-
-
 // Dialog skipping
 DO_APP_FUNC(0x0, 0x0, bool, MoleMole_TalkDialogContext_get_canAutoClick, (TalkDialogContext *__this, MethodInfo *method));
 DO_APP_FUNC(0x0, 0x0, void, MoleMole_TalkDialogContext_OnDialogSelectItem, (TalkDialogContext *__this, Notify *notify, MethodInfo *method));
@@ -44,47 +36,16 @@ DO_APP_FUNC(0x0, 0x0, void, MoleMole_InLevelCutScenePageContext_ClearView, (InLe
 // Protection bypass
 DO_APP_FUNC(0x070F3890, 0x07040220, Byte__Array *, Application_RecordUserData, (int32_t nType, MethodInfo *method));
 
-// Lua functions
-DO_APP_FUNC(0x037DACC0, 0x03755D60, Byte__Array *, LuaManager_LoadCustomLuaFile, (LuaManager *__this, String **filePath, bool *recycleBytes, MethodInfo *method));
-DO_APP_FUNC(0x040D8F20, 0x0403F6D0, void, Lua_xlua_pushasciistring, (void *L, String *str, MethodInfo *method));
-DO_APP_FUNC(0x057332F0, 0x05689990, void *, LuaEnv_DoString, (void *__this, Byte__Array *chunk, String *chunkName, void *env, MethodInfo *method));
-DO_APP_FUNC(0x00D17310, 0x00D13F40, void, MoleMole_LuaShellManager_DoString, (void *__this, Byte__Array *byteArray, MethodInfo *method));
-DO_APP_FUNC(0x00D18530, 0x00D150F0, void, MoleMole_LuaShellManager_ReportLuaShellResult, (void *__this, String *type, String *value, MethodInfo *method)); // Anticheat info
-
-//Backdoored lua packets
-DO_APP_FUNC(0x0, 0x0, void, MoleMole_PlayerModule_OnWindSeedClientNotify, (MoleMole_PlayerModule *__this, Proto_WindSeedClientNotify *notify, MethodInfo *method));
-DO_APP_FUNC(0x0, 0x0, void, MoleMole_PlayerModule_OnReciveLuaShell, (MoleMole_PlayerModule *__this, Proto_PlayerLuaShellNotify *playerLuaShellNotify, MethodInfo *method));
-
 // Visuals
 DO_APP_FUNC(0x0, 0x0, void, MoleMole_SCameraModuleInitialize_SetWarningLocateRatio, (SCameraModuleInitialize *__this, double deltaTime, CameraShareData *data, MethodInfo *method));
 //DO_APP_FUNC(0x01E78510, 0x01E421A0, void, MoleMole_VCBaseSetDitherValue_set_ManagerDitherAlphaValue, (MoleMole_VCBaseSetDitherValue *__this, float value, MethodInfo *method));
 DO_APP_FUNC(0x0, 0x0, void, MoleMole_PlayerModule_EntityAppear, (MoleMole_PlayerModule *__this, Proto_SceneEntityInfo *entity, VisionType__Enum type, uint32_t infoParam, MethodInfo *method));
 DO_APP_FUNC(0x051292c0, 0x051292c0, void, BaseShaderPropertyTransition_SetDitherAlphaValue, (/*BaseShaderPropertyTransition*/ void *__this, float value, MethodInfo *method));
 
-// Show Skill CDs
-DO_APP_FUNC(0x0352AC10, 0x034AE090, void, MoleMole_LCAvatarCombat_SetSkillIndex, (LCAvatarCombat *__this, LCAvatarCombat_LCAvatarCombat_SkillInfo *skillInfo, int32_t index, int32_t priority, MethodInfo *method));
-DO_APP_FUNC(0x035299B0, 0x034ACE50, void, MoleMole_LCAvatarCombat_CheckCDTimer, (LCAvatarCombat *__this, LCAvatarCombat_LCAvatarCombat_SkillInfo *info, MethodInfo *method));
-DO_APP_FUNC(0x0352E420, 0x034B1820, int32_t, MoleMole_LCAvatarCombat_GetSkillMaxChargesCount, (LCAvatarCombat *__this, uint32_t skillID, MethodInfo *method));
-DO_APP_FUNC(0x0352E910, 0x034B1D00, int32_t, MoleMole_LCAvatarCombat_GetSkillCurrentChargesCount, (LCAvatarCombat *__this, uint32_t skillID, MethodInfo *method));
-
-DO_APP_FUNC(0x01D026A0, 0x01CD12A0, void, MonoTeamBtn_SetupView, (MonoTeamBtn *__this, uint64_t guid, MethodInfo *method));
-DO_APP_FUNC(0x01D03540, 0x01CD2110, void, MonoTeamBtn_set_PCKey, (MonoTeamBtn *__this, String *value, MethodInfo *method));
-DO_APP_FUNC(0x01D03470, 0x01CD2040, /*MonoControlElement*/ void *, MonoTeamBtn_get_PS4KeyIcon, (MonoTeamBtn *__this, MethodInfo *method));
-DO_APP_FUNC(0x01875530, 0x01850FB0, bool, MoleMole_UIManager_IsPS4Layout, (MethodInfo *method));
-
-
-// Profile Changer | RyujinZX#6666
-DO_APP_FUNC(0x0234B6A0, 0x023052B0, Button_1 *, ProfilePage, (MonoInLevelPlayerProfilePage *__this, MethodInfo *method)); // MonoInLevelPlayerProfilePage_get_logoutButton
-DO_APP_FUNC(0x01A43DC0, 0x01A1A980, void, ProfileEditPage, (MonoFriendInformationDialog *__this, Sprite *value, MethodInfo *method)); // MonoFriendInformationDialog_set_icon
-
-// Custom Weather | RyujinZX#6666
-DO_APP_FUNC(0x03AB94E0, 0x03A2CAB0, bool, EnviroSky_ChangeWeather, (void * /*app::EnviroSky*/ __this, String *weatherPath, float transTime, float ratio, MethodInfo *method));
-DO_APP_FUNC(0x00BD2B00, 0x00BD2A80, void * /*app::EnviroSky*/, EnviroSky_get_Instance, (MethodInfo *method));
-
 // Free Camera
 DO_APP_FUNC(0x039294e0, 0x039294e0, float, Camera_get_fieldOfView, (Camera *__this, MethodInfo *method));
 DO_APP_FUNC(0x0392a7f0, 0x0392a7f0, void, Camera_set_fieldOfView, (Camera *__this, float value, MethodInfo *method));
-DO_APP_FUNC(0x07045640, 0x06F92990, void, Camera_CopyFrom, (Camera *__this, Camera *other, MethodInfo *method));
+DO_APP_FUNC(0x03926bc0, 0x03926bc0, void, Camera_CopyFrom, (Camera *__this, Camera *other, MethodInfo *method));
 
 // Game Object, Component, Transform Utility
 DO_APP_FUNC(0x03345b30, 0x03345b30, GameObject *, GameObject_Find, (String *name, MethodInfo *method));
@@ -96,7 +57,7 @@ DO_APP_FUNC(0x07027BC0, 0x06F75450, Transform *, Transform_FindChild, (Transform
 DO_APP_FUNC(0x07027BF0, 0x06F75480, Transform *, Transform_GetChild, (Transform *__this, int32_t index, MethodInfo *method));
 DO_APP_FUNC(0x0700E240, 0x06F5BF90, Component_1 *, Component_1_GetComponent_1, (Component_1 *__this, String *type, MethodInfo *method));
 DO_APP_FUNC(0x07110920, 0x0705CB10, GameObject *, GameObject_CreatePrimitive, (PrimitiveType__Enum type, MethodInfo *method));
-DO_APP_FUNC(0x07110EE0, 0x0705D0C0, Transform *, GameObject_get_transform, (GameObject *__this, MethodInfo *method));
+DO_APP_FUNC(0x03346cf0, 0x03346cf0, Transform *, GameObject_get_transform, (GameObject *__this, MethodInfo *method));
 DO_APP_FUNC(0x07028EF0, 0x06F76750, Quaternion, Transform_get_localRotation, (Transform *__this, MethodInfo *method));
 DO_APP_FUNC(0x07027DC0, 0x06F76BF0, void, Transform_set_localRotation, (Transform *__this, Quaternion value, MethodInfo *method));
 DO_APP_FUNC(0x07028F30, 0x06F76790, Vector3, Transform_get_localScale, (Transform *__this, MethodInfo *method));
@@ -105,27 +66,27 @@ DO_APP_FUNC(0x07028EB0, 0x06F76710, Vector3, Transform_get_localPosition, (Trans
 DO_APP_FUNC(0x07029380, 0x06F76BE0, void, Transform_set_localPosition, (Transform *__this, Vector3 value, MethodInfo *method));
 DO_APP_FUNC(0x071108B0, 0x0705CA90, Component_1 *, GameObject_AddComponentInternal, (GameObject *__this, String *className, MethodInfo *method));
 DO_APP_FUNC(0x07110C10, 0x0705CAA0, Component_1 *, GameObject_AddComponent, (GameObject *__this, Type *componentType, MethodInfo *method));
-DO_APP_FUNC(0x070240D0, 0x06F71AE0, Object_1 *, Object_1_Instantiate_2, (Object_1 *original, MethodInfo *method));
+DO_APP_FUNC(0x035c2fe0, 0x035c2fe0, Object_1 *, Object_1_Instantiate_2, (Object_1 *original, MethodInfo *method));
 DO_APP_FUNC(0x07028D10, 0x06F76570, int32_t, Transform_get_childCount, (Transform *__this, MethodInfo *method));
 DO_APP_FUNC(0x0700E3F0, 0x06F5C140, GameObject *, Component_1_get_gameObject, (Component_1 *__this, MethodInfo *method));
 DO_APP_FUNC(0x070244F0, 0x06F71EF0, String *, Object_1_get_name, (Object_1 *__this, MethodInfo *method));
 DO_APP_FUNC(0x0712F160, 0x0707B1E0, Material__Array *, Renderer_GetMaterialArray, (Renderer *__this, MethodInfo *method));
 DO_APP_FUNC(0x0700F380, 0x06F5D0D0, void, Material_set_mainTexture, (Material *__this, Texture *value, MethodInfo *method));
-DO_APP_FUNC(0x07120870, 0x0706C920, Vector3, Vector3_Lerp, (Vector3 a, Vector3 b, float t, MethodInfo *method));
-DO_APP_FUNC(0x07028D40, 0x06F765A0, Vector3, Transform_get_eulerAngles, (Transform *__this, MethodInfo *method));
-DO_APP_FUNC(0x07029270, 0x06F76AD0, void, Transform_set_eulerAngles, (Transform *__this, Vector3 value, MethodInfo *method));
-DO_APP_FUNC(0x07029070, 0x06F768D0, Vector3, Transform_get_right, (Transform *__this, MethodInfo *method));
-DO_APP_FUNC(0x07029400, 0x06F76C70, void, Transform_set_right, (Transform *__this, Vector3 value, MethodInfo *method));
-DO_APP_FUNC(0x07029150, 0x06F769B0, Vector3, Transform_get_up, (Transform *__this, MethodInfo *method));
-DO_APP_FUNC(0x07029470, 0x06F76CF0, void, Transform_set_up, (Transform *__this, Vector3 value, MethodInfo *method));
-DO_APP_FUNC(0x07028DA0, 0x06F76600, Vector3, Transform_get_forward, (Transform *__this, MethodInfo *method));
-DO_APP_FUNC(0x070292C0, 0x06F76B20, void, Transform_set_forward, (Transform *__this, Vector3 value, MethodInfo *method));
-DO_APP_FUNC(0x07029100, 0x06F76960, Quaternion, Transform_get_rotation, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03ab5bf0, 0x03ab5bf0, Vector3, Vector3_Lerp, (Vector3 a, Vector3 b, float t, MethodInfo *method));
+DO_APP_FUNC(0x03aaee80, 0x03aaee80, Vector3, Transform_get_eulerAngles, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03aaf9f0, 0x03aaf9f0, void, Transform_set_eulerAngles, (Transform *__this, Vector3 value, MethodInfo *method));
+DO_APP_FUNC(0x03aaf580, 0x03aaf580, Vector3, Transform_get_right, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03aaff80, 0x03aaff80, void, Transform_set_right, (Transform *__this, Vector3 value, MethodInfo *method));
+DO_APP_FUNC(0x03aaf770, 0x03aaf770, Vector3, Transform_get_up, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03ab0170, 0x03ab0170, void, Transform_set_up, (Transform *__this, Vector3 value, MethodInfo *method));
+DO_APP_FUNC(0x03aaef10, 0x03aaef10, Vector3, Transform_get_forward, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03aafaa0, 0x03aafaa0, void, Transform_set_forward, (Transform *__this, Vector3 value, MethodInfo *method));
+DO_APP_FUNC(0x03aaf720, 0x03aaf720, Quaternion, Transform_get_rotation, (Transform *__this, MethodInfo *method));
 DO_APP_FUNC(0x07027DF0, 0x06F76CE0, void, Transform_set_rotation, (Transform *__this, Quaternion value, MethodInfo *method));
-DO_APP_FUNC(0x07023DE0, 0x06F717F0, void, Object_1_Destroy_1, (Object_1 *obj, MethodInfo *method));
-DO_APP_FUNC(0x07023D90, 0x06F717A0, void, Object_1_DestroyImmediate_1, (Object_1 *obj, MethodInfo *method));
-DO_APP_FUNC(0x070B59F0, 0x07002840, float, Mathf_Lerp, (float a, float b, float t, MethodInfo *method));
-DO_APP_FUNC(0x070C6B90, 0x07013BE0, float, Input_GetAxis, (String *axisName, MethodInfo *method));
+DO_APP_FUNC(0x035c2720, 0x035c2720, void, Object_1_Destroy_1, (Object_1 *obj, MethodInfo *method));
+DO_APP_FUNC(0x035c2520, 0x035c2520, void, Object_1_DestroyImmediate_1, (Object_1 *obj, MethodInfo *method));
+DO_APP_FUNC(0x04937070, 0x04937070, float, Mathf_Lerp, (float a, float b, float t, MethodInfo *method));
+DO_APP_FUNC(0x049e3330, 0x049e3330, float, Input_GetAxis, (String *axisName, MethodInfo *method));
 DO_APP_FUNC(0x03BE2600, 0x03B53350, BaseComponent*, ComponentManager_GetComponent_3, (/*ComponentManager*/void* __this, String* typeName, MethodInfo* method));
 
 // Utility
@@ -172,36 +133,6 @@ DO_APP_FUNC(0x018A1FD0, 0x0187CE10, SafeUInt32, MoleMole_SafeUInt32_set_Value, (
 // should be 'op_Implicit_1' not 'get_value'
 DO_APP_FUNC(0x018A2090, 0x0187CED0, uint32_t, MoleMole_SafeUInt32_get_Value, (SafeUInt32 v, MethodInfo * method));
 
-DO_APP_FUNC(0x0, 0x0, LCBaseCombat *, MoleMole_BaseEntity_GetLogicCombatComponent_1, (BaseEntity *__this, MethodInfo *method));
-
-DO_APP_FUNC_METHODINFO(0x0, 0x0, MoleMole_BaseEntity_GetLogicCombatComponent_1__MethodInfo);
-DO_APP_FUNC(0x0, 0x0, String *, MoleMole_BaseEntity_ToStringRelease, (BaseEntity *__this, MethodInfo *method));
-
-DO_APP_FUNC(0x0, 0x0, void, MoleMole_BaseEntity_SetRelativePosition, (BaseEntity *__this, Vector3 position, bool forceSyncToRigidbody, MethodInfo *method));
-DO_APP_FUNC(0, 0, void, MoleMole_BaseEntity_SetAbsolutePosition, (BaseEntity *__this, Vector3 abpos, bool forceSyncToRigidbody, MethodInfo *method));
-DO_APP_FUNC(0, 0, void, MoleMole_BaseEntity_SetTransformForward, (BaseEntity *__this, Vector3 forward, bool keepHorizontal, bool immediately, MethodInfo *method));
-DO_APP_FUNC(0, 0, Rigidbody *, MoleMole_BaseEntity_GetRigidbody, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x03871E30, 0x037EB080, Vector3, MoleMole_BaseEntity_GetAbsolutePosition, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x0387F360, 0x037F8360, Vector3, MoleMole_BaseEntity_GetRelativePosition, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x03887F00, 0x03800DA0, Vector3, MoleMole_BaseEntity_GetForward, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x03863090, 0x037DC570, Vector3, MoleMole_BaseEntity_GetForwardFast, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x03885D80, 0x037FEC70, Vector3, MoleMole_BaseEntity_GetRight, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x0386F280, 0x037E8590, Vector3, MoleMole_BaseEntity_GetUp, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x03870780, 0x037E9A10, bool, MoleMole_BaseEntity_IsActive, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x0386C810, 0x037E5BC0, Animator *, MoleMole_BaseEntity_get_animator, (BaseEntity *__this, MethodInfo *method));
-
-// type should be 'MoleMole_VCCharacterCombat' not 'MoleMole_VCBaseMove'
-// function name should be 'GetVisualCombatComponent_3' not 'GetMoveComponent_1'
-// 3.3 ResolveCall("e8 ?? ?? ?? ?? 48 85 c0 74 ?? 4c 8b 00 48 8b c8 f3 0f 10 56");//MoleMole_BaseEntity_GetVisualCombatComponent
-DO_APP_FUNC(0x00C09A60, 0x00C099A0, VCBaseMove *, MoleMole_BaseEntity_GetMoveComponent_1, (BaseEntity *__this, MethodInfo *method));
-// 3.3 ResolveMov("48 8B 15 ?? ?? ?? ?? 48 8B CB E8 ?? ?? ?? ?? 48 85 C0 74 BF 48 85 FF 74 24 48 8B 57 ?? 48 8B C8 E8 ?? ?? ?? ?? EB AC E8 ?? ?? ?? ?? 48 8B C8 33 D2 E8 ?? ?? ?? ?? ");//MoleMole_BaseEntity_GetVisualCombatComponent__MethodInfo
-DO_APP_FUNC_METHODINFO(0x0A73B840, 0x0A6878C0, MoleMole_BaseEntity_GetMoveComponent_1__MethodInfo);
-
-DO_APP_FUNC(0x0386CDC0, 0x037E6160, List_1_MoleMole_BaseComponent_ *, MoleMole_BaseEntity_GetAllLogicComponents, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x0387CBD0, 0x037F5C30, List_1_MoleMole_BaseComponent_ *, MoleMole_BaseEntity_GetAllVisualComponents, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x0387A320, 0x0322D390, GameObject *, MoleMole_BaseEntity_get_rootGameObject, (BaseEntity *__this, MethodInfo *method));
-DO_APP_FUNC(0x025726F0, 0x022F63B0, GameObject *, MoleMole_BaseEntity_get_gameObject, (BaseEntity *__this, MethodInfo *method));
-
 // type should be 'MoleMole_AvatarEntity' not 'MoleMole_BaseEntity'
 DO_APP_FUNC(0x0, 0x0, uint32_t, MoleMole_EntityManager_GetLocalAvatarEntityID, (MoleMole_EntityManager *__this, MethodInfo *method));
 DO_APP_FUNC(0x0, 0x0, BaseEntity *, MoleMole_EntityManager_GetLocalAvatarEntity, (MoleMole_EntityManager *__this, MethodInfo *method));
@@ -215,15 +146,6 @@ DO_APP_FUNC(0x0, 0x0, Bounds, Utils_4_GetBounds, (GameObject *go, MethodInfo *me
 
 DO_APP_FUNC(0x03072D50, 0x03005B10, uint64_t, MoleMole_TimeUtil_get_LocalNowMsTimeStamp, (MethodInfo *method));
 
-DO_APP_FUNC(0x0, 0x0, bool, MoleMole_LoadingManager_IsLoaded, (MoleMole_LoadingManager *__this, MethodInfo *method));
-
-DO_APP_FUNC(0x01872CE0, 0x0184E830, bool, MoleMole_UIManager_HasEnableMapCamera, (MoleMole_UIManager *__this, MethodInfo *method));
-DO_APP_FUNC(0x0185F9B0, 0x0183B8D0, void, MoleMole_UIManager_EnableInput, (MoleMole_UIManager *__this, bool playerInput, bool clearCurInputState, bool ignoreTouch, MethodInfo *method));
-DO_APP_FUNC(0x01871230, 0x0184CDC0, void, MoleMole_UIManager_TryShowNormalMessage, (MoleMole_UIManager *__this, String *content, Color bgColor, bool showBackground, MethodInfo *method));
-DO_APP_FUNC(0x0185F310, 0x0183B230, void, MoleMole_UIManager_TryShowInfoMessageWithoutBlockInput, (MoleMole_UIManager *__this, String *content, bool discardIfDuplicated, UIShowPriority__Enum priority, MethodInfo *method));
-DO_APP_FUNC(0x0153C7F0, 0x01521D80, /*MoleMole_GeneralDialogContext*/void *, MoleMole_UIUtil_TryShowGeneralDialog, (String *title, String *desc, /*Action_1_Boolean_*/void *callback, UIType__Enum uiType, /*MoleMole_WaitForGeneralDialog*/void *yieldIns, GeneralDialogContext_GeneralDialogType__Enum dialogType, UIShowPriority__Enum mode, bool showNormalCloseBtn, bool isToggleDialog, bool MCJCBLMKDKC, String *unknown, MethodInfo *method));
-DO_APP_FUNC(0x01540940, 0x01525E30, /*MoleMole_GeneralDialogContext*/void *, MoleMole_UIUtil_TryShowSimpleGeneralDialog_1, (String *title, String *content, /*Action*/void *buttonCallback, MethodInfo *method));
-DO_APP_FUNC(0x0152CA20, 0x015123A0, void, MoleMole_UIUtil_TryShowMessage_1, (String *content, Color bgColor, bool showBackground, MethodInfo *method));
 DO_APP_FUNC(0x039221a0, 0x039221a0, SystemLanguage__Enum, Application_get_systemLanguage, (MethodInfo *method));
 
 DO_APP_FUNC(0x010FE1F0, 0x010F08A0, void, MonoMiniMap_Update, (MonoMiniMap *__this, MethodInfo *method));
@@ -239,8 +161,8 @@ DO_APP_FUNC(0x03921da0, 0x03921da0, bool, Application_get_IsFocused, (MethodInfo
 
 DO_APP_FUNC(0x071506C0, 0x0709C260, bool, RectTransformUtility_ScreenPointToLocalPointInRectangle, (void *rect, Vector2 screenPoint, void *cam, Vector2 *localPoint, MethodInfo *method));
 
-DO_APP_FUNC(0x07029030, 0x06F76890, Vector3, Transform_get_position, (Transform *__this, MethodInfo *method));
-DO_APP_FUNC(0x07027DE0, 0x06F75670, void, Transform_set_position, (Transform *__this, Vector3 value, MethodInfo *method));
+DO_APP_FUNC(0x03aaf530, 0x03aaf530, Vector3, Transform_get_position, (Transform *__this, MethodInfo *method));
+DO_APP_FUNC(0x03aaff30, 0x03aaff30, void, Transform_set_position, (Transform *__this, Vector3 value, MethodInfo *method));
 DO_APP_FUNC(0x07120420, 0x0706C4E0, float, Vector3_Distance, (Vector3 a, Vector3 b, MethodInfo *method));
 DO_APP_FUNC(0x070143C0, 0x06F61FD0, float, Vector2_Distance, (Vector2 a, Vector2 b, MethodInfo *method));
 
@@ -288,7 +210,10 @@ DO_APP_FUNC(0x0710D7B0, 0x06980840, void, Action_Invoke, (/*Action*/ void *__thi
 DO_APP_FUNC(0x034CE210, 0x03452B20, void, Miscs_SetUILocalAvatarVisible, (bool visible, MethodInfo *method));
 
 //RSA Patch
-DO_APP_FUNC(0x06A90750, 0x069E3AB0, void, RSA_FromXmlString, (RSA *__this, String *xmlString, MethodInfo *method));
+DO_APP_FUNC(0x0, 0x0, void, RSA_FromXmlString, (RSA *__this, String *xmlString, MethodInfo *method));
+
+DO_APP_FUNC(0x05da5f20, 0x05da5f20, bool, BattleInstance_IsStageForbidAutoBattle, (void * __this, MethodInfo * method));
+DO_APP_FUNC(0x05da5d40, 0x05da5d40, bool, BattleInstance_IsAutoBattleAtStart, (void * __this, int p0, MethodInfo * method));
 
 
 

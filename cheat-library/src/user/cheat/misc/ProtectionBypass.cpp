@@ -30,6 +30,13 @@ namespace cheat::feature
 		return 0;
 	}
 
+	static int32_t AntiCheatClientInterface_PollStatus(void* __this, void* options, app::AntiCheatClientViolationType__Enum* outViolationType, app::String** outMessage, MethodInfo* method)
+	{
+		auto outenum = *outViolationType;
+		LOG_DEBUG("%s", magic_enum::enum_name(outenum).data());
+		return 0;
+	}
+
     ProtectionBypass::ProtectionBypass() : Feature(),
         NF(f_Enabled, "General::ProtectionBypass", true),
 		NF(f_SpoofLuaShell, "General::ProtectionBypass", true),
